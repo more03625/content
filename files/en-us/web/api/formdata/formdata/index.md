@@ -63,6 +63,8 @@ Or you can specify the optional `form` argument when creating the `FormData` obj
 
 > **Note:** Only successful form controls are included in a FormData object, i.e. those with a name, not disabled and checked (radio buttons and checkboxes) or selected (one or more options within a select).
 
+> **Note:** You cannot console.log to FormData Object & if you do so the result will be always empty `FormData {}` Object. But this FormData Object can be easily viewed inside the API post request in to the headers section.
+
 ```js
 let myForm = document.getElementById('myForm');
 let formData = new FormData(myForm);
